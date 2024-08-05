@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'PokeCardTitle';
+    src: url('../Fonts/PokemonSolid.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'PokeDisplayCardTitle';
+    src: url('../Fonts/PocketMonk.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'PokeDetails';
+    src: url('../Fonts/PokemonGB.ttf') format('truetype');
+  }
+
+.PokemonTypeC{
+    background-color: #15191d;
+    border-radius: 2em;
+}
+
+.Prev{
+    width: 12em;
+    height: 3em;
+    background-color: #2a75bb;
+    color: #fff5ce;
+    border-radius: 25px;
+}
+.Prev span{
+    font-size: larger;
+
+}
+.Prev:hover{
+    cursor: pointer;
+    color: #2a75bb;
+    background-color: #ffcb05;
+}
+.prevPageStateStyle{
+    background-color: #6eb9ff;
+    color: #fff5ce;
+
+
+}
+.prevPageStateStyle:hover{
+    cursor: not-allowed;
+    background-color: #6eb9ff;
+    color: #fff5ce;
+    
+
+}
+.LowerC button{
+    width: 13em;
+    height: 3em;
+    background-color: #2a75bb;
+    font-family:PokeDetails ;
+    font-size: small;
+    color: #fff5ce;
+    border-radius: 25px;
+}
+.TypeP{
+    font-family:PokeDetails ;
+    /* font-size: small; */
+    color: #fff5ce;
+}
+.Next span{
+    font-size: larger;
+}
+.LowerC button:hover{
+    cursor: pointer;
+    color: #2a75bb;
+    background-color: #ffcb05;
+}
+.pokemon-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+}
+button span{
+    font-family:PokeDetails ;
+    letter-spacing: 0em;
+}
+.pokemonDisplayC{
+    height: 90%;
+    padding: 1em;
+    overflow-y: scroll;
+}
+.pokemonDisplayC::-webkit-scrollbar{
+    width: 10px; /* width of the scrollbar */
+  height: 10px;
+  background-color: none;
+    /* background-color: black; */
+}
+.pokemonDisplayC::-webkit-scrollbar-thumb{
+    width: 1em;
+    height: 2em;
+    border-radius: 25px;
+    background-color: aliceblue ;
+}
+
+@media (max-width:425px) {
+    .pokemon-grid {
+        grid-template-columns: none;
+        /* grid-template-rows: repeat(1,1fr); */
+    }
+}
+@media (max-width:768px) and (min-width:426px) {
+    .pokemon-grid {
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows: repeat(1,1fr); */
+    }
+}

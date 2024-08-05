@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'PokeCardTitle';
+    src: url('../Fonts/PokemonSolid.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'PokeDisplayCardTitle';
+    src: url('../Fonts/PocketMonk.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'PokeDetails';
+    src: url('../Fonts/PokemonGB.ttf') format('truetype');
+  }
+.PokeContainer{
+    /* background-color: #94befd; */
+    /* min-width: 25em;
+    min-height: 15em; */
+    max-width: 30em;
+    max-height: 20em;
+    background-color: #00050e;
+    border-radius: 1em;
+}
+.PokeContainer img{
+    max-height: 10em;
+    max-width: 10em;
+    /* background-color: aliceblue; */
+}
+
+.pokeName h1{
+    font-family: PokeCardTitle;
+    /* font-family: PokeDisplayCardTitle; */
+    /* font-size: 1.5em; */
+    font-size: xx-large;
+    letter-spacing: 0.1em;
+
+    color: #d8ecff;
+    /* color: #2a75bb; */
+    /* font-weight: 300; */
+    /* font-family: PokeDetails; */
+}
+.abilities{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.abilitiesCard{
+    font-family: PokeDisplayCardTitle;
+    min-width: 5em;
+    height: 2em;
+    font-size: medium;
+    letter-spacing: 0.1em;
+    border-radius: 25px;
+    padding: 0em 0.5em 0em 0.5em ;
+    background-color: #15191d;
+    color: aliceblue;
+    border: 0.1em solid aliceblue;
+}
+.PokeContainer:hover{
+    cursor: pointer;
+    scale: 1.03;
+    /* border: 1px solid aliceblue; */
+    background-color: #002d5a;
+    /* color: #15191d; */ 
+}
+
+@media (max-width: 1440px ) and (min-width:1024px) {
+    .pokeName h1{
+            font-size: 1.5em;
+
+    }
+    .PokeSearch .circle{
+        width: 8em;
+        height: 8em;
+    }
+    .PokeSearch img{
+        width: 8em;
+        height: 8em;
+    }
+    /* .PokeContainer {
+        width: fit-content;
+    } */
+}
+@media (max-width:425px) {
+    .PokeContainer{
+        width: 67vw;
+        height: 20vh;
+        padding: 0.5em;
+    } 
+    #pokeImage{
+        width: 40%;
+    }
+    .PokeInfo {
+        font-size: 2vh;
+        padding-block: 0.5em;
+    }
+    #pokeTitle{
+        font-size: clamp(1.5vh,2.5vh,2.5vh);
+    }
+    .ATitle h1{
+        font-size: 2vh;
+    }
+    .abilitiesCard span{
+        
+        font-size: 1.5vh;
+    }
+    .abilitiesCard{
+        height: 2vh;
+    }
+    .abilities {
+        overflow-y: scroll;
+    }
+}
+@media (max-width:768px) and (min-width:426px) {
+    .PokeContainer{
+        width: 35vw;
+        height: 20vh;
+        padding: 0.5em;
+    } 
+    #pokeImage{
+        width: 40%;
+    }
+    .PokeInfo {
+        font-size: 2vh;
+        padding-block: 0.5em;
+    }
+    #pokeTitle{
+        font-size: clamp(1.5vh,2.5vh,2.5vh);
+    }
+    .ATitle h1{
+        font-size: 2vh;
+    }
+    .abilitiesCard span{
+        
+        font-size: 1.5vh;
+    }
+    .abilitiesCard{
+        height: 2vh;
+    }
+    .abilities {
+        overflow-y: scroll;
+    }
+}
+@media (max-width:1024px) and (min-width:769px) {
+    .PokeContainer{
+        width:25vw;
+        height: 28vh;
+        padding: 0.5em;
+    }
+    #pokeImage{
+        width: 45%;
+    }
+    .PokeInfo {
+        font-size: 2vh;
+        padding-block: 0.5em;
+    }
+    #pokeTitle{
+        font-size: clamp(1.5vh,3vh,2.5vh);
+    }
+    .ATitle h1{
+        font-size: 2vh;
+    }
+    .abilitiesCard span{
+        
+        font-size: 1.5vh;
+    }
+    .abilitiesCard{
+        height: 2vh;
+    }
+    .abilities {
+        overflow-y: scroll;
+    } 
+}

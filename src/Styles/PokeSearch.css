@@ -1,0 +1,541 @@
+@font-face {
+    font-family: 'PokeCardTitle';
+    src: url('../Fonts/PokemonSolid.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'PokeDisplayCardTitle';
+    src: url('../Fonts/PocketMonk.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'PokeDetails';
+    src: url('../Fonts/PokemonGB.ttf') format('truetype');
+  }
+
+.MainPokeC{
+    border-radius: 1em;
+    background-color: #1d2026;
+    z-index: 10;
+}
+.PokeMonC{
+    background-color: aliceblue;
+    height: 70%;
+    width: 90%;
+    border-radius: 1em;
+    
+}
+.SearchC {
+    height: 3em;
+    width: 100%;
+    border-radius: 0.5em;
+}
+.InputField {
+    height: 100%;
+    width: 50%;
+    border-radius: 0.5em;
+
+}
+.InputField input{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5em;
+
+}
+.InputField img{
+    position: absolute;
+    top: 50%;
+    right:3%;
+    translate: 0% -50%;
+    height: 1.2em;
+    /* max-height: 1.5em; */
+
+}
+.InputField img{
+ cursor: pointer;
+ scale: 1.2;
+}
+.AbilitiesC::-webkit-scrollbar{
+    width: 1px; /* width of the scrollbar */
+  height: 1px;
+  background-color: none;
+    /* background-color: black; */
+}
+.AbilitiesC::-webkit-scrollbar-thumb{
+    width: 1em;
+    height: 2em;
+    border-radius: 25px;
+    background-color: aliceblue ;
+}
+
+.SearchBtn{
+    width: 7em;
+    height: 2.5em;
+    border-radius: 25px;
+    background-color: #000000;
+    color: aliceblue;
+    font-size: large;
+    font-weight: 500;
+}
+.SearchBtn:hover{
+    background-color: aliceblue;
+    color: #000000;
+}
+.CloseB{
+    width: 5em;
+    height: 2.5em;
+    border-radius: 25px;
+    background-color: aliceblue;
+    color: #1694d3;
+    font-size: large;
+    font-weight: 500;
+}
+.CloseB:hover{
+    background-color: crimson;
+    /* color:#f0d01es */
+    color: aliceblue;
+}
+.pikachuImage{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em 0em 0em 1em;
+    overflow: hidden;
+}
+.PokeMonC{
+    background-color: #0f0d0d;
+}
+.SearchLogo{
+    height: 15em;
+}
+.NPharase{
+    font-family: PokeDetails;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NPharase span{
+    padding-left: 1em;
+    text-align: center;
+}
+.PokeInfoC{
+    border-radius: 1em;
+}
+.image{
+    width: 40%;
+    /* background-color: ; */
+}
+.image img{
+    height: 20em;
+}
+.rightC{
+    /* width: 60%; */
+}
+.pokeTitle{
+    font-family: PokeDisplayCardTitle;
+    font-size: xx-large;
+    /* font-size: clamp(xx-large,xx-large,xx-large); */
+
+    /* width: clamp(8em, 100%, 20em);; */
+    
+}
+.pokeTitle h1{
+    /* height: 2em; */
+    font-size: 2em;
+    
+    /* color: #0281fc; */
+    color: #002244;
+}
+.typeinner{
+    font-family: PokeDetails;
+    letter-spacing: 0.5px;
+    font-size: small;
+    font-weight: 600;
+}
+
+.innerType{
+    border-radius: 25px;
+    width: 10em;
+    letter-spacing: 1px;
+    height: 2em;
+    font-family: PokeDetails;
+    font-size: small;
+    font-weight: 400;
+    padding-top: 3px;
+    /* color: aliceblue; */
+
+    /* margin: 2px; */
+}
+.StisiticsC{
+    font-family: PokeDetails;
+    letter-spacing: 0.5px;
+    font-size: small;
+    font-weight: 600;
+}
+.statsValueH{
+    font-family: PokeDetails;
+    width: 40%;
+    font-size: small;
+    
+}
+.statsValueM{
+    width: 60%;
+}
+.AbilitiesT{
+    font-family: PokeDetails;
+    letter-spacing: 0.5px;
+    font-size: small;
+    font-weight: 600;
+    /* overflow-y: scroll; */
+    /* letter-spacing: -3px; */
+}
+.AbilitiesC{
+    overflow-y: scroll;
+}
+.AbyConat{
+    font-family: PokeDetails;
+    font-size: small;
+    /* padding-top: 4px; */
+
+}
+.weightCardT{
+    font-family: PokeDetails;
+    letter-spacing: 0.5px;
+    font-size: small;
+    font-weight: 600;
+    
+}
+.weightValue{
+    font-family: PokeDetails;
+    /* letter-spacing: -3px; */
+    font-size: small;
+    /* padding-top: 3px; */
+}
+.StatsC{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    gap: 0.25em;
+}
+.innerBar{
+    border-radius: 25px;
+    background-color: #002244;
+}
+.rightC{
+    display: grid;
+    padding-top: 1em;
+    grid-template-rows: 18% 10%  50% 10% 10%;
+}
+.Stats{
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+.AbyConat{
+    min-width: 7em;
+    max-width: 20em;
+    height: 2em;
+    background-color:aliceblue;
+    border-radius: 25px;
+    padding-left: 1em;
+    padding-right: 1em;
+    box-sizing: content-box;
+}
+.AbyConat span{
+    
+    font-size: 1vh;
+}
+
+.innerType:hover{
+    cursor: pointer;
+    background-color: #002244;
+    color: aliceblue;
+}
+@media (max-width: 1024px )  {
+    .pokeName h1{
+            font-size: 1.5em;
+
+    }
+    .PokeSearch .circle{
+        width: 6em;
+        height: 6em;
+    }
+    .PokeSearch img{
+        width: 6em;
+        height: 6em;
+    }
+}
+@media (max-width: 1024px )  {
+    .pokeName h1{
+            font-size: 1.5em;
+
+    }
+    .PokeSearch .circle{
+        width: 6em;
+        height: 6em;
+    }
+    .image img{
+        max-width: 12em;
+        max-height: 12em;
+    }
+    .rightC{
+        grid-template-rows: 14% 11% 50% 10% 10%;
+        font-size: 1em;
+        width: 65%;
+    }
+    .pokeTitle{
+        font-size: clamp(large,xx-large,x-large);
+        width: 100%;
+    }
+    .AbilitiesT{
+        font-size: 0.7em;
+    }
+    .type{
+        font-size: 0.7em;
+    }
+    .type span{
+        font-size: 1em;
+    }
+    .innerType{
+        width: 7em;
+        height: 1.5em;
+        padding-inline: 0.1em;
+        min-width: fit-content;
+    }
+    .Stats{
+        font-size: 1em;
+        
+    }
+    .StisiticsC{
+        font-size: 0.7em;
+        
+    }
+    .statsValueH {
+        font-size: 0.6em;
+        /* height: 0.7em; */
+    }
+    .statsM {
+        height: 1.5em;
+
+    }
+    .outerBar {
+        height: 1em;
+        width: 80%;
+    }
+    .StatsC{
+        grid-template-rows: repeat(6, 1.3em);
+    }
+    .AbilitiesC {
+        width: 80%;
+        overflow-y: scroll;
+    }
+    .AbyConat {
+        height: 1.5em;
+        min-width: fit-content;
+        max-width: fit-content;
+        font-size: 0.7em;
+        flex-shrink: 1;
+    }
+    .weightCardT{
+        font-size: 0.7em;
+    }
+    .weightValue{
+        font-size: 0.7em;
+    }
+    .SearchC {
+        height: 2em;
+    }
+    .SearchBtn{
+        
+        height: 2em;
+    }
+    /* .AbilitiesC {
+        width: 60%;
+    } */
+
+}
+@media (max-width: 768px )  {
+    .pokeName h1{
+            font-size: 1.5em;
+
+    }
+    .rightC{
+        /* width: 0%; */
+    }
+    .PokeSearch .circle{
+        width: 6em;
+        height: 6em;
+    }
+    .image img{
+        width: 8em;
+        height: 8em;
+    }
+    .SearchLogo{
+        height: 7em;
+    }
+    .NPharase{
+        height: 2em;
+    }
+    .NPharase span{
+        font-size: 0.5em;
+    }
+    .CloseB{
+        height: 1.5em;
+        width: 3.5em;
+        font-size: 1em;
+    }
+    .SearchBtn{
+        height: 2em;
+        width: 4.5em;
+        /* font-size: small; */
+        font-size: 1em;
+    }
+    .InputField input{
+        height: 2em;
+        font-size: 1em;
+    }
+    .InputField{
+        height:2em;
+        /* font-size: small; */
+        font-size: 1em;
+    }
+    .image img{
+        height: 10em;
+    }
+        
+    .Stats {
+        width: 90%;
+    }
+    .statsValueH{
+        font-size: 0.5em;
+    }
+    .pokeTitle{
+        font-size: large;
+
+    }
+    .StatsConatiner {
+        width: 17em;
+    }
+    .AbilitiesC{
+        width: 40%;
+    }
+    .Stats{
+        width: 60%;
+    }
+    .pokeTitle {
+        justify-content: start;
+    }
+    .outerBar {
+        height: 1.1em;
+        font-size: 0.7em;
+    }
+    .AbilitiesC {
+        /* width: 60%; */
+    }
+}
+
+@media (max-width: 425px )  {
+    .PokeInfoC {
+        flex-direction: column;
+    }
+    .pokeTitle {
+        justify-content: center;
+        width: 11em;
+    }
+    .rightC {
+        padding-top: 0%;
+        width: 80%;
+        /* overflow-y: scroll; */
+    }
+    .image img{
+        height: 7em;
+        margin: 0.3em;
+    }
+    .image {
+        height: 10em;
+    }
+    .statsM{
+
+        height: 1em;
+    }
+    .Stats{
+        /* overflow-y: scroll; */
+        grid-template-rows: repeat(6,0.7em);
+        row-gap: 0em;
+    }
+    .StisiticsC{
+        /* position: fixed; */
+    }
+    /* .StatsC{
+        overflow-y: scroll;
+    } */
+    .statsValueH{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* width: 60%; */
+        font-size: 0.5em;
+        height: fit-content;
+    }
+    .statsValueM{
+         display: flex;
+         width: 60%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .outerBar{
+        width: 100%;
+    }
+    .statsM {
+        /* height: 0.7em; */
+    }
+    .StatsConatiner{
+        /* padding-top: 0.5em; */
+        margin-block: 0.5em;
+        height: 7em;
+        width: 13em;
+        overflow-y: scroll;
+    }
+    .StatsC{
+        gap: 0em;
+    }
+    .AbilitiesC {
+        width: 5em;
+    }
+    .SearchforPokemon{
+        flex-direction: column;
+        width: 100%;
+    }
+    .SearchforPokemon img{
+        width: 100%;
+        border-radius: 1em;
+    }
+    .NPharase{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .AbilitiesT{
+        display: none;
+    }
+    .AbilitiesC {
+        display: none;
+    }
+    .abilitiesMainC {
+        /* display: none; */
+    }
+    .NoSearch {
+    width: 100%;
+
+}
+.NoSearch img{
+    height: 10em;
+    width: 10em;
+}
+.InputField input{
+ font-size: 0.9em;
+}
+.InputField img{
+ height: 0.8em;
+}
+
+
+
+
+}

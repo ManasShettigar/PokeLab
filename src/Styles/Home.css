@@ -1,0 +1,213 @@
+.Logo{
+    height: 4em;
+    width: fit-content;
+    position: fixed;
+    top: 1.5em;
+    left: 3em;
+    z-index: 10;
+}
+body{
+    background-color: #000000;
+}
+.Logo img{
+    height: 100%;
+    z-index: 10;
+    /* position: fixed; */
+} 
+.Logo img:hover{
+    scale:1.1;
+    cursor: pointer;
+    /* position: fixed; */
+} 
+.MainC{
+    background-color: #000000;
+}
+.HeroPokemonC{
+    width: 100%;
+    background-image: linear-gradient(27deg,rgb(0, 0, 0),#000000);
+}
+.HeroPokemonM{
+    
+    max-width: 30em;
+    max-height: 30em;
+    position: absolute;
+    opacity: 0.9;
+    /* z-index: ; */
+    /* background-image: linear-gradient(100deg,#16191c,#77abdf,#16191c); */
+    /* opacity: 0.4; */
+}
+.HeroPokemonM img{
+    min-width: 20em;
+    min-height: 20em;
+    max-width: 30em;
+    max-height: 30em;
+}
+.HeroPokemonM img {
+    min-width: 15em;
+    min-height: 15em;
+    max-width: 30em;
+    max-height: 30em;
+  }
+  
+  /* For large laptops (e.g. 15-inch and above) */
+  /* @media (min-width: 1200px) {
+    .HeroPokemonM img {
+      min-width: 20em;
+      min-height: 20em;
+      max-width: 30em;
+      max-height: 30em;
+    }
+  } */
+  
+  /* For small laptops (e.g. 13-inch and below) */
+  @media (max-width: 1000px) {
+    .HeroPokemonM img {
+      min-width: 10em;
+      min-height: 10em;
+      max-width: 20em;
+      max-height: 20em;
+    }
+  }
+.HeroPokemonM img:hover{
+ cursor: pointer;
+    /* box-shadow: 0 0 10px rgb(255, 210, 210);
+  clip-path: inset(0 0 0 0); */
+}
+.SpotlightBG{
+    width: 50%;
+    /* z-index: 10; */
+    /* opacity: 0.5; */
+}
+.SpotlightBG img{
+    height: 100%;
+    width: 100%;
+    /* z-index: 10; */
+}
+.CenterContaniner{
+    background-color: #000000;
+}
+.PokeSearch{
+    position: fixed;
+    bottom: 7%;
+    left: 50%;
+    translate: -50%;
+    height: 10em;
+    z-index: 6;
+    /* box-shadow: #000000; */
+}
+.PokeSearch img{
+    position: absolute;
+    left: 50%;
+    /* top:-100%; */
+    z-index: 10;
+    translate: -50% -35%; 
+    height: 10em;
+}
+.PokeSearch img:hover{
+    z-index: 20;
+    cursor: pointer;
+    background-color: #0e6ab5;
+   border: 0.2em solid aliceblue;
+}
+.PokeSearch{
+    /* position: relative; */
+    /* background-color: none; */
+    /* border: px solid #0e6ab5; */
+    /* background-color: #0e6ab5; */
+    width: 30em;
+    height: 3em;
+    border-radius: 25px;
+    z-index: 6;
+}
+.CenterContaniner{
+    background-color: #000000;
+}
+ /* .circle{
+    position: absolute;
+    height: 10em;
+    width: 10em;
+    z-index: 3;
+    background-color: #0e6ab5;
+    /* background-color: inherit; */
+    /* border-radius: 50%;
+    left: 50%;
+    translate: -50% -33%;
+    /* box-shadow: none; */
+    /* box-shadow: 0 0 5px 5px rgba(255, 0, 0, 0.349); */
+/* } */ 
+
+/* .circle:hover{
+    cursor: pointer;
+    z-index: 10;
+    background-color: #0e6ab5;
+    box-shadow: 0 0 5px 5px rgba(255, 0, 0, 0.349);
+    
+} */  
+.circle {
+    position: absolute;
+    height: 10em;
+    width: 10em;
+    z-index: 7;
+    background-color: transparent;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -33%);
+    /* box-shadow: 0 0 5px 5px rgba(255, 0, 0, 0.349); */
+}
+
+.circle:hover {
+    cursor: pointer;
+    /* z-index: 10; */
+    background-color: #0e6ab5;
+    box-shadow: 0 0 10px 10px rgba(255, 0, 0, 0.349); /* increased shadow size for visibility */
+}
+.circlenew:hover{
+    cursor: pointer;
+}
+.PokeSearch {
+    /* cursor: pointer;      */
+    /* background-color: #0e6ab5;  */
+     /* box-shadow: 0 0 5px 5px rgba(255, 0, 0, 0.349); */
+    /* background-color: inherit; */
+    
+}
+.PokesearchContainer{
+    position: fixed;
+    top:200%;
+    left: 50%;
+    translate: -50%;
+    z-index: 15;
+    
+}
+.pokeSearchSelected{
+    background-color: #0e6ab5;
+    /* box-shadow: 0 0 5px 5px rgba(255, 0, 0, 0.349); */
+}
+.pokeDexDropDown{
+    top: 7%;
+    transition: 0.2s ease-in-out;
+}
+.PokeSearchOuter{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #000000;
+    top:200%;
+    opacity: 0.5;
+    /* top:200%;
+    left: 50%;
+    translate: -50%; */
+    z-index: 2;
+}
+.bgBlur{
+    top: 0%;
+    /* opacity: 0.3; */
+}
+
+@media (max-width: 425px )  {
+.Logo{
+    left: 50%;
+    top: 1%;
+    transform: translate(-50%);
+}
+}
